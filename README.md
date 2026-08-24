@@ -47,7 +47,7 @@ The main objectives of Roshdyar are:
 ## Core Concepts
 
 The core of Roshdyar is built around five fundamental concepts:
-
+```
 Request
    |
 Workflow
@@ -57,7 +57,7 @@ Actor
 State
    |
 Log
-
+```
 ### Request
 
 A request represents an operational action initiated within the system.
