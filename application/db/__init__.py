@@ -15,3 +15,5 @@ AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False)
 async def get() -> AsyncIterator[AsyncSession]:
     async with AsyncSessionLocal() as session:
         yield session
+
+__all__ = ['get', "Base"]
