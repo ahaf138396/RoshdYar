@@ -375,7 +375,7 @@ The MVP intentionally focuses on the operational core rather than implementing t
 ## Architecture
 
 The conceptual architecture of Roshdyar is organized into several layers:
-
+```
 +---------------------------+
 |     Presentation Layer    |
 |                           |
@@ -408,7 +408,7 @@ The conceptual architecture of Roshdyar is organized into several layers:
 | APIs                      |
 | External Systems          |
 +---------------------------+
-
+```
 
 The architecture is intended to remain modular and extensible.
 
@@ -459,7 +459,7 @@ Complexity should be introduced when it solves a real problem rather than as an 
 The long-term data model revolves around the relationships between operational entities.
 
 A simplified conceptual model can be represented as:
-
+```
                     +---------+
                     |  User   |
                     +----+----+
@@ -489,7 +489,7 @@ A simplified conceptual model can be represented as:
          | Events  |  |Requests |  |Documents |
          +---------+  +---------+  +----------+
 
-
+```
 The exact implementation of the data model is determined by the current application and may evolve as the system develops.
 
 ---
@@ -581,7 +581,7 @@ The current repository should be considered the implementation of the project ra
 Roshdyar originated within the broader Jooya ecosystem.
 
 The two projects have different primary purposes:
-
+```
 Jooya
   |
   +-- Search and Data Infrastructure
@@ -597,6 +597,7 @@ Roshdyar
   +-- Workflow Management
   |
   +-- Structured Operational Data
+```
 
 Roshdyar can potentially serve as a real-world source of structured operational data for future data analysis and insight capabilities.
 
@@ -627,7 +628,7 @@ The project is therefore not treated merely as a collection of software features
 The long-term vision of Roshdyar is to evolve from an operational automation system into a comprehensive process and data platform.
 
 The evolution can be summarized as:
-
+```
 Manual Processes
        |
        v
@@ -647,7 +648,7 @@ Data Analytics
        |
        v
 Decision Support
-
+```
 
 This progression allows the system to create value at each stage without requiring the complete long-term architecture to be implemented from the beginning.
 
@@ -770,12 +771,6 @@ Recommended documentation areas include:
 * Operational processes
 
 The README provides the high-level project overview; detailed technical documentation should be maintained separately where appropriate.
-
----
-
-## License
-
-License information should reflect the actual license selected for the Roshdyar repository and its components.
 
 ---
 
