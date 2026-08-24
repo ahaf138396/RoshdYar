@@ -8,7 +8,7 @@ origins = [
 ]
 
 # Adding CORSMiddleware to the FastAPI application
-async def add_cors_middleware(app):
+def add_cors_middleware(app):
     CORSMiddleware,
     allow_origins=origins, # List of allowed origins
     allow_credentials=True, # Allow credentials such as cookies and authorization headers
