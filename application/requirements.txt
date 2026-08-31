@@ -2,3 +2,6 @@ fastapi
 uvicorn
 asyncio
 sqlalchemy
+pydantic_settings
+pydantic
+jinja2
