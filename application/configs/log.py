@@ -4,7 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import List, Optional, Literal
 
-class LogSettings(BaseModel):
+class LogSettings(BaseSettings):
     log_level: Literal["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"] = Field(
         "INFO",
         validation_alias="LOG_LEVEL",

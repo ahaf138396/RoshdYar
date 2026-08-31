@@ -4,12 +4,10 @@ from functools import lru_cache
 from pathlib import Path
 from typing import List, Optional, Literal
 
-class DatabaseSettings(BaseModel):
+class DatabaseSettings(BaseSettings):
     database_url: str = Field(validation_alias="DATABASE_URL")
 
     model_config = SettingsConfigDict(
-        env_file=".env",
-        env_file_encoding="utf-8",
         extra="ignore",
     )
 
