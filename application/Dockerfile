@@ -1,6 +1,6 @@
 FROM python:3.14-slim
 
-WORKDIR /app
+WORKDIR /application
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
@@ -19,4 +19,5 @@ ENV PYTHONUNBUFFERED=1
 ENV PORT=8000
 
 COPY . .
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
