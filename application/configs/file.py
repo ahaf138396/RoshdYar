@@ -4,7 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import List, Optional, Literal
 
-class FileSettings(BaseModel):
+class FileSettings(BaseSettings):
     file_storage_path: Path = Field(
         default=Path("/var/app/uploads"),
         validation_alias="FILE_STORAGE_PATH"

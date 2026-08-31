@@ -4,14 +4,15 @@ from functools import lru_cache
 from pathlib import Path
 from typing import List, Optional, Literal
 
-class BasicSettings(BaseModel):
-    app_name:str
-    app_env: Literal["development", "testing", "production"] = "development"
-    api_prefix: str = "/api/v1"
+class BasicSettings(BaseSettings):
+    app_name:str | None = None
+    env: Literal["development", "testing", "production"] | None = "development"
+    api_prefix: str | None = "/api/v1"
+    app_host: str | None = "127.0.0.1"
+    app_port: int | None = 8000
+    app_description: str | None = None
 
     model_config = SettingsConfigDict(
-        env_file=".env",
-        env_file_encoding="utf-8",
         extra="ignore",
     )
 
